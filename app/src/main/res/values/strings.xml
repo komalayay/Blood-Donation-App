@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">BloodRed</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_Close">Close Navigation Drawer</string>
+
+
+    <string-array name="bloodgroups">
+        <item>Select Your BloodGroup</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="regions">
+        <item>Select Region</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Kolkata</item>
+        <item>Bangalore</item>
+        <item>Pune</item>
+        <item>Surat</item>
+        <item>Patna</item>
+        <item>chennai</item>
+        <item>Jammu</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="eligibility_">Eligibility Requirements</string>
+    <string name="female_">If you are female, you must:\n Be healthy and feeling well\nBe at least 17 years old in most states\nBe at least 5 ft 5 inch\nWeigh at least 150 lbs.</string>
+    <string name="male_">If you are male, you must:\nBe healthy and feeling well\nBe at least 17 years old in most states\nBe at least 5 ft 1 inch \nWeigh at least 130 lbs.\n</string>
+    <string name="info_">Giving blood saves lives. The blood you give is a lifeline in an emergency and for people who need long-term treatments. Many people would not be alive today if donors had not generously given their blood.</string>
+    <string name="aboutus">This is a demo projects on blood donation and collecting. Our Team Members are: \n
+                1. Komal Bhat\n
+                2. Sarvesh Koli \n
+                3. Prerna Kokate \n
+                4. Siddhant kolhe \n
+                5. Bhagwat Kolekar \n
+    </string>
+
+</resources>

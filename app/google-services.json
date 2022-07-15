@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "987113026791",
+    "project_id": "redblood-eab48",
+    "storage_bucket": "redblood-eab48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987113026791:android:1890523c98acb05e7d5e42",
+        "android_client_info": {
+          "package_name": "com.example.bloodred"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987113026791-q2lvf9nf05ecpm1ntril44tu5hgci02b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bloodred",
+            "certificate_hash": "16a1fb0de23adb4629c01a07f521aa94d51c7b99"
+          }
+        },
+        {
+          "client_id": "987113026791-6tiqevd60dkdkqvgnu0ak7hq5ltrvcfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd7JllPU8ReUx8lRZLqjt3TMfP0b6rp00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987113026791-6tiqevd60dkdkqvgnu0ak7hq5ltrvcfc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

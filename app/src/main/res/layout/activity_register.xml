@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/picture1"
+        android:alpha="0.8"/>
+    
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="331dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:drawable/zoom_plate"
+        android:backgroundTint="#9FDADA"
+        android:fontFamily="@font/baloo"
+        android:text="      REGISTER"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bloodGroupImage"
+        android:layout_width="74dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="256dp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerTitle"
+        app:layout_constraintEnd_toEndOf="@+id/registerTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registerTitle"
+        app:srcCompat="@drawable/ic_blood" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/profileImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerTitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:hint="NAME"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/signUpAsDonor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:hint="EMAIL"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:hint="PHONE NO"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/registerBloodGroup"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#7E8BA6A0"
+        android:entries="@array/bloodgroups"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="117dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#89BFBF"
+        android:fontFamily="@font/baloo"
+        android:text="REGISTER"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/registerBloodGroup"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="@+id/registerBloodGroup"
+        app:layout_constraintTop_toBottomOf="@+id/registerBloodGroup" />
+
+    <TextView
+        android:id="@+id/AlreadyHaveAnAccount1"
+        android:layout_width="173dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/baloo"
+        android:text="Already have an account?"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#121111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/signUpAsDonor"
+        app:layout_constraintVertical_bias="0.963" />
+
+    <TextView
+        android:id="@+id/signUpAsDonor"
+        android:layout_width="251dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/baloo"
+        android:text="SIGN UP AS DONOR"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/registerTitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout8"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
+        android:hint="PASSWORD"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout7"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

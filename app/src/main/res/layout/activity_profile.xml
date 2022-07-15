@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/picture1"
+        android:alpha="0.8"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#74BABA"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="268dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="-2dp"
+        android:background="#9FDADA"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <TextView
+            android:id="@+id/ProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:paddingLeft="30dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/ProfileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:paddingLeft="30dp"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/ProfileType"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="30dp"
+            android:text="Type" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="143dp"
+        android:layout_height="158dp"
+        android:background="#9FDADA"
+        android:orientation="vertical"
+        android:layout_marginTop="57dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/ProfilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/ProfileBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#74BABA"
+            android:fontFamily="@font/baloo"
+            android:text=" GO BACK"
+            android:textColor="#070707"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.948" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

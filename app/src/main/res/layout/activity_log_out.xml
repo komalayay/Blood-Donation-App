@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pastelbg1"
+    tools:context=".LogOutActivity">
+
+
+    <ImageView
+        android:id="@+id/chooseLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bloodsplashicon" />
+
+    <TextView
+        android:id="@+id/LogOutText"
+        android:layout_width="316dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#7E8BA6A0"
+        android:fontFamily="@font/baloo"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="You have choosen to Log out "
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/chooseLogo"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="@+id/chooseLogo"
+        app:layout_constraintTop_toBottomOf="@+id/chooseLogo" />
+
+    <TextView
+        android:id="@+id/Thankyou"
+        android:layout_width="316dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#7E8BA6A0"
+        android:fontFamily="@font/baloo"
+        android:paddingLeft="40dp"
+        android:paddingTop="5dp"
+        android:text="Thanks for Joining Us!!!"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/LogOutText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LogOutText"
+        app:layout_constraintTop_toBottomOf="@+id/LogOutText" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailAddress"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:hint="EMAIL"
+        app:layout_constraintEnd_toEndOf="@+id/Thankyou"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/Thankyou"
+        app:layout_constraintTop_toBottomOf="@+id/Thankyou">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registercusEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="117dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#89BFBF"
+        android:fontFamily="@font/baloo"
+        android:onClick="logout"
+        android:text="Log Out"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/EmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/EmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

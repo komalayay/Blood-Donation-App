@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:background="@drawable/header_background"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/NavigationProfile"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profile_image" />
+
+    <TextView
+        android:id="@+id/NavUserName"
+        android:layout_width="195dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/baloo"
+        android:text="FULL NAME"
+        android:textColor="#7E060B0A"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/NavUserEmail"
+        android:layout_width="195dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/baloo"
+        android:text="Person@gmail.com"
+        android:textColor="#7E060B0A"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/NavUserBloodgroup"
+        android:layout_width="195dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/baloo"
+        android:text="B+"
+        android:textColor="#7E060B0A"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/NavUsertype"
+        android:layout_width="195dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/baloo"
+        android:text="Donor"
+        android:textColor="#7E060B0A"
+        android:textSize="18dp" />
+
+
+
+</LinearLayout>

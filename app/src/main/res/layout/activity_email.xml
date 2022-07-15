@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/picture1"
+    tools:context=".EmailActivity">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#74BABA"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+    <TextView
+        android:id="@+id/EmailTitle"
+        android:layout_width="331dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:drawable/zoom_plate"
+        android:backgroundTint="#9FDADA"
+        android:fontFamily="@font/baloo"
+        android:text="EMAIL"
+        android:paddingLeft="90dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="48sp" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailTo"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:hint="To"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/Thankyou"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/Thankyou"
+        app:layout_constraintTop_toBottomOf="@+id/Thankyou">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/To"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailSubject"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:hint="Subject"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/Thankyou"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/Thankyou"
+        app:layout_constraintTop_toBottomOf="@+id/Thankyou">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailMessage"
+        android:layout_width="288dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="36dp"
+        android:hint="Message"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/Thankyou"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/Thankyou"
+        app:layout_constraintTop_toBottomOf="@+id/Thankyou">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/EmailButton"
+        android:layout_width="117dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#89BFBF"
+        android:fontFamily="@font/baloo"
+        android:text="Send"
+        android:textColor="#000000" />
+
+</LinearLayout>

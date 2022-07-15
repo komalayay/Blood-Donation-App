@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pastelbg1"
+    android:orientation="vertical"
+    tools:context=".EligibilityActivity">
+
+
+    <TextView
+        android:id="@+id/Eligibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/panelBackground"
+        android:gravity="left"
+        android:linksClickable="true"
+        android:drawableLeft="@drawable/ic_what"
+        android:padding="20dp"
+        android:text="@string/eligibility_"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/Female"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/panelBackground"
+        android:gravity="left"
+        android:linksClickable="true"
+        android:padding="20dp"
+        android:text="@string/female_"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/panelBackground"
+        android:gravity="left"
+        android:linksClickable="true"
+        android:padding="20dp"
+        android:text="@string/male_"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/panelBackground"
+        android:gravity="left"
+        android:linksClickable="true"
+        android:padding="20dp"
+        android:text="@string/info_"
+        android:textSize="18sp" />
+
+</LinearLayout>
